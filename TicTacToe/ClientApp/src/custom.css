@@ -1,0 +1,35 @@
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+.board {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  /* grid-template-rows: repeat(3, 1fr); */
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(206, 34, 154);
+  border: 3px solid orange;
+  transition: background-color .15s;
+}
+.square:hover {
+  background-color: rgb(156, 36, 120);
+}
+
